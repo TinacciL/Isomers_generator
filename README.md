@@ -7,7 +7,6 @@ The porpouse of this open source program is not to provide a optimatize tool but
 
 This program used a python3 interface, to run this code you must install on your machine this list of packages:
 
-* numpy
 * matplotlib
 * networkx
 * itertools
@@ -17,7 +16,7 @@ The program is inside the ** functions.py ** file, inside this file there are so
 
 ## Usage
 
-*Main code:*
+**Main code:**
 
 ```python
 import networkx as nx
@@ -31,7 +30,7 @@ n_O = 1 # the number (int) of oxygen atoms
 tree = all_possibile_molecules(n_H,n_C,n_N,n_O) # tree is a tree in which each node are a molecule in the process of creation, the leaf are the all possibile molecules generated
 ```
 
-* Other functions: *
+**Other functions:**
 
 Function that print the tree.
 
