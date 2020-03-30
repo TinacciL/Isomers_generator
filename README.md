@@ -54,7 +54,7 @@ mol_graph_image(g)
 
 ## Documentation
 
-* [Isomers Generator](https://github.com/TinacciL/Isomers_generator/IG_documentation.pdf)
+* [Isomers Generator](https://github.com/TinacciL/Isomers_generator/blob/master/IG_documentation.pdf)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
