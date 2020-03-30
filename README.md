@@ -17,7 +17,7 @@ The program is inside the ** functions.py ** file, inside this file there are so
 
 ## Usage
 
-* Main code: *
+*Main code:*
 
 ```python
 import networkx as nx
