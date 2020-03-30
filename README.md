@@ -7,10 +7,10 @@ The porpouse of this open source program is not to provide a optimatize tool but
 
 This program used a python3 interface, to run this code you must install on your machine this list of packages:
 
-* matplotlib
-* networkx
-* itertools
-* random
+* ```python matplotlib```
+* ```python networkx```
+* ```python itertools```
+* ```python random```
 
 The program is inside the ```functions.py``` file, inside this file there are some file that can you help to visualize the molecules and show the properties of those.
 
