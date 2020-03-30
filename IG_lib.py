@@ -92,7 +92,7 @@ def mol_graph_image(G):
 	
 	plt.savefig("graph.png", format="PNG")
 	plt.show()
-	plt.clf()
+	#plt.clf()
 	return
 
 def atom_valence(G):
@@ -108,7 +108,6 @@ def atom_valence(G):
 	return(tmp_bol,n_atom)
 
 def hierarchy_pos(G, root=None, width=20., vert_gap = 0.2, vert_loc = 0, xcenter = 0.5):
-
     '''
     From Joel's answer at https://stackoverflow.com/a/29597209/2966723.  
     Licensed under Creative Commons Attribution-Share Alike 
@@ -172,6 +171,16 @@ def hierarchy_pos(G, root=None, width=20., vert_gap = 0.2, vert_loc = 0, xcenter
 
     return _hierarchy_pos(G, root, width, vert_gap, vert_loc, xcenter)
 
+def tree_image(G):
+	'''
+	Draw tree graph 
+	'''
+	pos = hierarchy_pos(G,0)    
+	nx.draw(G, pos=pos, with_labels=True)
+	plt.show()
+	#plt.clf()
+	return
+ 
 def del_iso_graph(tmp,prop):
 	'''
 	delete graphs in a list (tmp) that are isomorph respect to an graph attribute (prop) or a list of attributes
