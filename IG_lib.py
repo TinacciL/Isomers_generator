@@ -90,7 +90,7 @@ def mol_graph_image(G):
 	except:
 		nx.draw_networkx_edges(G, pos, width=2.0, style='solid', alpha=0.5) 
 	
-	plt.savefig("graph.png", format="PNG")
+	#plt.savefig("graph.png", format="PNG")
 	plt.show()
 	#plt.clf()
 	return
@@ -177,6 +177,7 @@ def tree_image(G):
 	'''
 	pos = hierarchy_pos(G,0)    
 	nx.draw(G, pos=pos, with_labels=True)
+	#plt.savefig("tree.png", format="PNG")
 	plt.show()
 	#plt.clf()
 	return
