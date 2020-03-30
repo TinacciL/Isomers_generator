@@ -1,7 +1,6 @@
 from itertools import combinations, chain, permutations
 import networkx as nx
 import matplotlib.pyplot as plt
-import numpy as np
 import random 
 
 random.seed(0)
@@ -377,7 +376,7 @@ def list_resonance_structure(G):
 		list_ris.append(G)
 	return(list_ris)
 
-def all_possibile_molecules(n_h,n_c,n_o,n_n):
+def isomers_generator(n_h,n_c,n_o,n_n):
 	'''
 	Function that take as input the number of: H,C,O,N and gives it back the tree of the generation of all the possibile molecules. This last one are the leafs of the tree. 
 	'''

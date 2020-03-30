@@ -20,14 +20,14 @@ The program is inside the ```functions.py``` file, inside this file there are so
 
 ```python
 import networkx as nx
-from functions import all_possibile_molecules
+from IG_lib import isomers_generator
 
 n_H = 1 # the number (int) of hydrogen atoms
 n_C = 1 # the number (int) of carbon atoms
 n_N = 1 # the number (int) of nitrogen atoms
 n_O = 1 # the number (int) of oxygen atoms
 
-tree = all_possibile_molecules(n_H,n_C,n_N,n_O) # tree is a tree in which each node are a molecule in the process of creation, the leaf are the all possibile molecules generated
+tree = isomers_generator(n_H,n_C,n_N,n_O) # tree is a tree in which each node are a molecule in the process of creation, the leaf are the all possibile molecules generated
 ```
 
 **Other functions:**
@@ -35,7 +35,7 @@ tree = all_possibile_molecules(n_H,n_C,n_N,n_O) # tree is a tree in which each n
 Function that print the tree.
 
 ```python
-from functions import hierarchy_pos
+from IG_lib import hierarchy_pos
 
 pos = hierarchy_pos(tree,0)    
 nx.draw(tree, pos=pos, with_labels=True) 
@@ -44,7 +44,7 @@ nx.draw(tree, pos=pos, with_labels=True)
 Function that print one molecule from the tree:
 
 ```python
-from functions import mol_graph_image
+from IG_lib import mol_graph_image
 
 i = 4 # the i-node of the tree
 g = tree.nodes[i]['graph']
