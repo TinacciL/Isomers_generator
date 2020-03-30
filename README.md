@@ -12,7 +12,7 @@ This program used a python3 interface, to run this code you must install on your
 * itertools
 * random
 
-The program is inside the ** functions.py ** file, inside this file there are some file that can you help to visualize the molecules and show the properties of those.
+The program is inside the ```functions.py``` file, inside this file there are some file that can you help to visualize the molecules and show the properties of those.
 
 ## Usage
 
