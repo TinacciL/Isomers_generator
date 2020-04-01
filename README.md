@@ -35,10 +35,9 @@ tree = isomers_generator(n_H,n_C,n_N,n_O) # tree is a tree in which each node ar
 Function that print the tree.
 
 ```python
-from IG_lib import hierarchy_pos
+from IG_lib import tree_image
 
-pos = hierarchy_pos(tree,0)    
-nx.draw(tree, pos=pos, with_labels=True) 
+tree_image(tree)
 ```
 
 Function that print one molecule from the tree:
