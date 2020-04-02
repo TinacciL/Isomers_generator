@@ -62,7 +62,7 @@ atoms_property(g)
 
 * [Isomers Generator](https://github.com/TinacciL/Isomers_generator/blob/master/IG_documentation.pdf)
 
-##TODO
+## TODO
 * Find the most stable structures with emirical methods (filter)
 * Show radicals and lone pairs in the draw
 
