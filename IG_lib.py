@@ -177,6 +177,7 @@ def tree_image(G):
 	'''
 	pos = hierarchy_pos(G,0)    
 	nx.draw(G, pos=pos, with_labels=True)
+	#plt.savefig("tree.png", format="PNG")
 	plt.show()
 	#plt.clf()
 	return
