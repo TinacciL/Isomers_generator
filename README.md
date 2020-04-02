@@ -66,8 +66,4 @@ atoms_property(g)
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-<<<<<<< HEAD
 [MIT](https://github.com/TinacciL/Isomers_generator/blob/master/LICENSE.txt)
-=======
-[MIT](https://github.com/TinacciL/Isomers_generator/blob/master/LICENSE)
->>>>>>> 32fe20efa530deeb7bb755f556a1229c7eff33eb
