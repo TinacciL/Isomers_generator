@@ -51,6 +51,13 @@ g = tree.nodes[i]['graph']
 mol_graph_image(g)
 ```
 
+Function that print all the info of the atoms in the molecule:
+
+```python
+from IG_lib import atoms_property
+
+atoms_property(g)
+```
 
 ## Documentation
 

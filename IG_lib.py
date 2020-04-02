@@ -90,7 +90,7 @@ def mol_graph_image(G):
 	except:
 		nx.draw_networkx_edges(G, pos, width=2.0, style='solid', alpha=0.5) 
 	
-	plt.savefig("graph.png", format="PNG")
+	#plt.savefig("graph.png", format="PNG")
 	plt.show()
 	#plt.clf()
 	return
@@ -288,6 +288,14 @@ def all_bonds_molecules(G):
 		tmp_g[edge[0]][edge[1]]['bond'] = tmp_g[edge[0]][edge[1]]['bond'] + 1
 		tmp_mol.append(tmp_g.copy())
 	return(tmp_mol)
+
+def atoms_property(G):
+	'''
+	Print all the infos of the atoms in the G graph
+	'''
+	for k,node in enumerate(G):
+		print('label:', k, '| atom:', G.nodes[k]['atom'], '| N_bonds:', G.nodes[k]['bonds'], '| N_electron:', G.nodes[k]['electrons'], '| formal_charge:', G.nodes[k]['formal_charge'], '| non_b_electrons:', G.nodes[k]['non_b_electrons'], '| N_lone pair:', G.nodes[k]['lone_pair'], '| N_radicals:', G.nodes[k]['radicals'])
+	return
 
 def possible_electron(list_electron,av_electron):
 	'''
