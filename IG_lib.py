@@ -399,9 +399,9 @@ def isomers_generator(n_h,n_c,n_o,n_n):
 	Function that take as input the number of: H,C,O,N and gives it back the tree of the generation of all the possibile molecules. This last one are the leafs of the tree. 
 	'''
 	H = Atom(("H",1,1,1,1))
-	C = Atom(("C",4,6,4,4))
-	N = Atom(("N",5,7,4,4))
-	O = Atom(("O",6,8,2,4))
+	C = Atom(("C",4,4,4,4))
+	N = Atom(("N",5,5,4,4))
+	O = Atom(("O",6,6,2,4))
 	tmp_h = {'atom': H.atom, 'valence_electron': H.electrons, 'atomic_numb': H.atomic_numb, 'valence': H.valence, 'orbitals': H.orbitals, 'lone_pair': 0,'bonds': 0, 'electrons': 0, 'radicals': 0, 'formal_charge': 0, 'non_b_electrons': 0}
 	tmp_c = {'atom': C.atom, 'valence_electron': C.electrons, 'atomic_numb': C.atomic_numb, 'valence': C.valence, 'orbitals': C.orbitals, 'lone_pair': 0,'bonds': 0, 'electrons': 0, 'radicals': 0, 'formal_charge': 0, 'non_b_electrons': 0}
 	tmp_n = {'atom': N.atom, 'valence_electron': N.electrons, 'atomic_numb': N.atomic_numb, 'valence': N.valence, 'orbitals': N.orbitals, 'lone_pair': 0,'bonds': 0, 'electrons': 0, 'radicals': 0, 'formal_charge': 0, 'non_b_electrons': 0}
